@@ -10,9 +10,10 @@
 @import "settings.css";
 @import "chat.css";
 @import "mobile.css";
+@import "joker-chat.css";
 
 body {
-  height: 10000px;
+  height: 2000px;
   background-color: white;
   padding: 10px 20px;
   color: #020202;

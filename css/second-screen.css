@@ -67,7 +67,7 @@
   background-color: black;
   animation: superhard2 8s linear forwards;
 }
-/*
+
 @keyframes superhard {
   0% {
     transform: translateY(5%);

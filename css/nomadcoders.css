@@ -174,6 +174,16 @@
 .mmessage__img {
   height: 20px;
   width: 20px;
+  animation: m_img 1s linear infinite;
+}
+
+@keyframes m_img {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 .nomad-message .message__author {
@@ -191,6 +201,10 @@
 .nsent-message .mmessage__bubble {
   border-bottom-right-radius: 0px;
   background-image: linear-gradient(to left, #544a7d, #ffd452);
+}
+
+.spe:hover {
+  transform: scale(1.5, 1.5);
 }
 
 @keyframes incomingAnim {

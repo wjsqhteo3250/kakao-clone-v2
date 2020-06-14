@@ -11,16 +11,17 @@
 .nomad-center {
   display: flex;
   position: fixed;
+  width: 100%;
   top: 45%;
   height: 10%;
   justify-content: center;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
   animation: nomadfadein 8s 2s linear forwards;
 }
 
 .nomad-center img {
-  width: auto;
+  width: 30%;
   height: 100%;
   padding-right: 15px;
   animation: ca 5s linear infinite;
@@ -66,7 +67,7 @@
   background-color: black;
   animation: superhard2 8s linear forwards;
 }
-
+/*
 @keyframes superhard {
   0% {
     transform: translateY(5%);

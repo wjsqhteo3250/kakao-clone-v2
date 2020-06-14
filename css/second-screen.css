@@ -11,10 +11,11 @@
 .nomad-center {
   display: flex;
   position: fixed;
-  top: 47%;
+  top: 470px;
   justify-content: center;
   align-items: center;
-  animation: superhard3 2s linear;
+  opacity: 0;
+  animation: nomadfadein 8s 2s linear forwards;
 }
 
 .nomad-center img {
@@ -41,76 +42,103 @@
 .moving {
   display: flex;
   position: fixed;
-  top: 13%;
+  top: 100px;
   width: 100%;
-  height: 100%;
-  animation: hard 2s linear;
+  height: 900px;
   flex-direction: column;
 }
 
 .f {
   width: 100%;
-  height: 33%;
+  height: 770px;
+  top: -400px;
+  position: absolute;
   background-color: black;
-  opacity: 0.2;
-  animation: superhard2 1s linear;
-}
-
-.s {
-  width: 100%;
-  height: 17%;
-  animation: superhard 1s linear;
+  animation: superhard 8s linear forwards;
 }
 
 .t {
   width: 100%;
-  height: 50%;
+  height: 800px;
+  top: 470px;
+  position: absolute;
   background-color: black;
-  opacity: 0.2;
-  animation: superhard2 1s linear;
-}
-
-@keyframes hard {
-  from {
-    transform: none;
-  }
-  to {
-    transform: ;
-  }
+  animation: superhard2 8s linear forwards;
 }
 
 @keyframes superhard {
-  from {
-    height: 0%;
+  0% {
+    transform: translateY(50px);
   }
-  to {
-    height: 17%;
+  20% {
+    transform: none;
   }
-}
-
-@keyframes superhard2 {
-  from {
+  33% {
+    transform: translateY(-300px);
+  }
+  46% {
+    transform: translateY(400px);
+  }
+  59% {
+    transform: translateY(-200px);
+  }
+  72% {
+    transform: translateY(300px);
+  }
+  85% {
     opacity: 1;
+    transform: none;
   }
-  to {
+  100% {
     opacity: 0.2;
   }
 }
 
-@keyframes superhard3 {
-  from {
-    opacity: 0;
+@keyframes superhard2 {
+  0% {
+    transform: translateY(-50px);
   }
-  to {
+  20% {
+    transform: none;
+  }
+  33% {
+    transform: translateY(-300px);
+  }
+  46% {
+    transform: translateY(400px);
+  }
+  59% {
+    transform: translateY(-200px);
+  }
+  72% {
+    transform: translateY(300px);
+  }
+  85% {
     opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0.2;
   }
 }
 
-@keyframes superhard4 {
+@keyframes nomadfadein {
   0% {
-    top: 13%;
+    opacity: 0;
   }
-  20% {
-    top: ;
+  10% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }

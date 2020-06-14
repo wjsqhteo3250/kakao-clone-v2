@@ -18,8 +18,8 @@
 .chats-body .status-bar {
   padding: 0px 20px;
 }
-.chats-body {
-  background-image: url(../images/chatBg.png);
+.nomad {
+  background-image: url(../images/beach.jpg);
   min-height: 100vh;
 }
 .chat__write-container {
@@ -135,11 +135,11 @@
   width: 80%;
 }
 
-.incoming-message {
+.nomad-message {
   align-self: flex-start;
 }
 
-.sent-message {
+.nsent-message {
   align-self: flex-end;
 }
 
@@ -152,15 +152,15 @@
   }
 }
 
-.incoming-message img {
+.nomad-message img {
   width: 30px;
   border-radius: 15px;
   margin-right: 15px;
   box-shadow: 0px 13px 10px rgba(50, 50, 93, 0.25);
-  animation: spin 1s linear infinite;
+  animation: spin 5s linear infinite;
 }
 
-.message .message__bubble {
+.message .mmessage__bubble {
   background-color: white;
   box-shadow: 0px 13px 10px rgba(50, 50, 93, 0.25);
   padding: 10px 20px;
@@ -171,21 +171,21 @@
   font-weight: 600;
 }
 
-.incoming-message .message__author {
+.nomad-message .message__author {
   display: block;
   margin-top: 10px;
   font-weight: 600;
   font-size: 12px;
 }
 
-.incoming-message .message__bubble {
+.nomad-message .mmessage__bubble {
   border-bottom-left-radius: 0px;
-  background-image: linear-gradient(to right, #e1eec3, #f05053);
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
 
-.sent-message .message__bubble {
+.nsent-message .mmessage__bubble {
   border-bottom-right-radius: 0px;
-  background-image: linear-gradient(to left, #22c1c3, #fdbb2d);
+  background-image: linear-gradient(to left, #544a7d, #ffd452);
 }
 
 @keyframes incomingAnim {
@@ -199,11 +199,11 @@
   }
 }
 
-.incoming-message {
+.nomad-message {
   animation: incomingAnim 0.5s ease-out forwards;
 }
 
-@keyframes sentAnim {
+@keyframes nsentAnim {
   from {
     opacity: 0;
     transform: translateX(200px);
@@ -214,8 +214,8 @@
   }
 }
 
-.sent-message {
-  animation: sentAnim 0.5s ease-out forwards;
+.nsent-message {
+  animation: nsentAnim 0.5s ease-out forwards;
 }
 
 .chats__chat {

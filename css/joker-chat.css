@@ -27,8 +27,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  animation: ff 8s linear forwards;
+  animation: ff 6s linear forwards;
   z-index: 1;
+}
+
+.body-img:active {
+  opacity: 0;
 }
 
 @keyframes ff {
@@ -166,7 +170,7 @@
   align-self: flex-start;
 }
 
-.sent-message {
+.jsent-message {
   align-self: flex-end;
 }
 
@@ -196,7 +200,7 @@
   animation: joker-spin 5s ease-out infinite;
 }
 
-.message .message__bubble {
+.message .jmessage__bubble {
   background-color: white;
   box-shadow: 0px 13px 10px rgba(50, 50, 93, 0.25);
   padding: 10px 20px;
@@ -214,14 +218,14 @@
   font-size: 12px;
 }
 
-.joker-message .message__bubble {
+.joker-message .jmessage__bubble {
   border-bottom-left-radius: 0px;
-  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-image: linear-gradient(to right, #ad5389, #3c1053);
 }
 
-.sent-message .message__bubble {
+.jsent-message .jmessage__bubble {
   border-bottom-right-radius: 0px;
-  background-image: linear-gradient(to left, #544a7d, #ffd452);
+  background-image: linear-gradient(to left, #4e54c8, #8f94fb);
 }
 
 @keyframes jokerAnim {
@@ -239,7 +243,7 @@
   animation: jokerAnim 0.5s ease-out forwards;
 }
 
-@keyframes sentAnim {
+@keyframes jsentAnim {
   from {
     opacity: 0;
     transform: translateX(200px);
@@ -250,6 +254,6 @@
   }
 }
 
-.sent-message {
-  animation: sentAnim 0.5s ease-out forwards;
+.jsent-message {
+  animation: jsentAnim 0.5s ease-out forwards;
 }

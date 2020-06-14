@@ -11,9 +11,11 @@
 @import "chat.css";
 @import "mobile.css";
 @import "joker-chat.css";
+@import "nomadcoders.css";
+@import "second-screen.css";
 
 body {
-  height: 2000px;
+  height: 1000px;
   background-color: white;
   padding: 10px 20px;
   color: #020202;

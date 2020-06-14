@@ -171,6 +171,11 @@
   font-weight: 600;
 }
 
+.mmessage__img {
+  height: 20px;
+  width: 20px;
+}
+
 .nomad-message .message__author {
   display: block;
   margin-top: 10px;

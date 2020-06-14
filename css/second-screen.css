@@ -1,7 +1,7 @@
 .second-chat__screen {
   display: flex;
   position: fixed;
-  top: 100px;
+  top: 0px;
   width: 100%;
   height: 100%;
   background-color: rgb(255, 192, 110);
@@ -11,7 +11,7 @@
 .nomad-center {
   display: flex;
   position: fixed;
-  top: 470px;
+  top: 45%;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -42,16 +42,16 @@
 .moving {
   display: flex;
   position: fixed;
-  top: 100px;
+  top: 0px;
   width: 100%;
-  height: 900px;
+  height: 100%;
   flex-direction: column;
 }
 
 .f {
   width: 100%;
-  height: 770px;
-  top: -400px;
+  height: 90%;
+  top: -45%;
   position: absolute;
   background-color: black;
   animation: superhard 8s linear forwards;
@@ -59,8 +59,8 @@
 
 .t {
   width: 100%;
-  height: 800px;
-  top: 470px;
+  height: 90%;
+  bottom: -45%;
   position: absolute;
   background-color: black;
   animation: superhard2 8s linear forwards;
@@ -68,22 +68,22 @@
 
 @keyframes superhard {
   0% {
-    transform: translateY(50px);
+    transform: translateY(5%);
   }
   20% {
     transform: none;
   }
   33% {
-    transform: translateY(-300px);
+    transform: translateY(-30%);
   }
   46% {
-    transform: translateY(400px);
+    transform: translateY(40%);
   }
   59% {
-    transform: translateY(-200px);
+    transform: translateY(-20%);
   }
   72% {
-    transform: translateY(300px);
+    transform: translateY(30%);
   }
   85% {
     opacity: 1;
@@ -96,22 +96,22 @@
 
 @keyframes superhard2 {
   0% {
-    transform: translateY(-50px);
+    transform: translateY(-5%);
   }
   20% {
     transform: none;
   }
   33% {
-    transform: translateY(-300px);
+    transform: translateY(-30%);
   }
   46% {
-    transform: translateY(400px);
+    transform: translateY(40%);
   }
   59% {
-    transform: translateY(-200px);
+    transform: translateY(-20%);
   }
   72% {
-    transform: translateY(300px);
+    transform: translateY(30%);
   }
   85% {
     opacity: 1;

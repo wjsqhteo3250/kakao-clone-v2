@@ -1,0 +1,11 @@
+body {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  width: 500px;
+  height: 1000px;
+  background: linear-gradient(to bottom, transparent, #f2f3f7),
+    url("./images/venom.jpg");
+}
